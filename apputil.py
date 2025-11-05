@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import KMeans
 
-"""Define kmeans and perform clustering on numerical numpy array"""
+"""Define kmeans and perform clustering on numerical numpy array.
+    Returns tuples, those being centroids and labels.
+"""
 def kmeans(X, k):
 
     model = KMeans(n_clusters=k, random_state=42)
