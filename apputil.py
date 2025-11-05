@@ -17,5 +17,15 @@ def kmeans(X, k):
 
     return (centroids, labels)
 
+"""Load 'diamonds' dataset from seaborn library.
+    Keep numeric columns only
+"""
+diamonds = sns.load_dataset("diamonds")
+numeric_diamonds = diamonds.select_dtypes(include=[np.number])
+
+
+
+
+
 
 
