@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import KMeans
+from time import time
 
 """Define kmeans and perform clustering on numerical numpy array.
     Returns tuples, those being centroids and labels.
@@ -32,6 +33,14 @@ def kmeans_diamonds(n, k):
 
     # Call the previously defined kmeans function
     return kmeans(X, k)
+
+def kmeans_timer(n, k, n_iter=5):
+    """
+    Run kmeans_diamonds(n, k) exactly n_iter times and
+    return the average runtime in seconds.
+    n = # of rows from dataset, k = # of clusters, n_iter = # of iterations
+    """
+    
 
 
 
