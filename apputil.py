@@ -48,6 +48,8 @@ def kmeans_timer(n, k, n_iter=5):
         elapsed = time() - start
         times.append(elapsed)
 
+    return sum(times) / len(times)
+
 
 
 
