@@ -38,9 +38,16 @@ def kmeans_timer(n, k, n_iter=5):
     """
     Run kmeans_diamonds(n, k) exactly n_iter times and
     return the average runtime in seconds.
-    n = # of rows from dataset, k = # of clusters, n_iter = # of iterations
+    n = # of rows from dataset, k = # of clusters, n_iter = # of iterations.
     """
-    
+    times = []
+
+    for _ in range(n_iter):
+        start = time()
+        _ = kmeans_diamonds (n, k)
+        elapsed = time() - start
+        times.append(elapsed)
+
 
 
 
