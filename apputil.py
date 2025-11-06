@@ -6,6 +6,7 @@ from sklearn.cluster import KMeans
 
 """Define kmeans and perform clustering on numerical numpy array.
     Returns tuples, those being centroids and labels.
+    Perform k-means clustering on numerical numpy array.
 """
 def kmeans(X, k):
 
@@ -18,7 +19,8 @@ def kmeans(X, k):
     return (centroids, labels)
 
 """Load 'diamonds' dataset from seaborn library.
-    Keep numeric columns only
+    Keep numeric columns only, and save them in a dataframe.
+    Run k-means on first n rows of numeric diamonds data.
 """
 diamonds = sns.load_dataset("diamonds")
 numeric_diamonds = diamonds.select_dtypes(include=[np.number])
