@@ -50,6 +50,8 @@ def kmeans_timer(n, k, n_iter=5):
 
     return sum(times) / len(times)
 
+# Successfully run kmeans_diamonds(n, k) to measure runtime using time() to return average runtime in output!
+
 
 
 
