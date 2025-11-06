@@ -23,6 +23,17 @@ def kmeans(X, k):
 diamonds = sns.load_dataset("diamonds")
 numeric_diamonds = diamonds.select_dtypes(include=[np.number])
 
+def kmeans_diamonds(n, k):
+
+    # Take first n rows and convert to NumPy array
+    X = numeric_diamonds.iloc[:n].to_numpy()
+
+    # Call the previously defined kmeans function
+    return kmeans(X, k)
+
+
+
+
 
 
 
